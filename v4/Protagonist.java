@@ -53,10 +53,6 @@ public class Protagonist extends Character
 
 
   //revert to normal mode
-  public void normalize()
-  {
-    _attack = .4;
-    _defense = 40;
-  }
+    public void abstract normalize();
 
 }//end class Protagonist

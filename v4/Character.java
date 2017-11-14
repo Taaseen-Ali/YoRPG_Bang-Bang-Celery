@@ -4,7 +4,7 @@
 // 2017-11-13
 
 
-public abstract  class Character
+public  class Character
 {
 
   //this feels like a bad idea... but the compiler made me do it!
@@ -62,9 +62,7 @@ public abstract  class Character
     return damage;
   }//end attack
 
-    public abstract void normalize();
-    public abstract void specialize();
-    public abstract void about();
+
     
 
 }//end class Character

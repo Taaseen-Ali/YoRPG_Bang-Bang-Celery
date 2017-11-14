@@ -33,7 +33,7 @@ public class Archer extends Protagonist{
 	this();
 	_name = name;
     }
-    public static String about(){
+    public String about(){
 	return "The Archeris weak in defense but her hitpoints are higher";}
     //prepare an Archer for a special attack
     public void specialize()

@@ -33,7 +33,7 @@ public class Warrior extends Protagonist{
 	this();
 	_name = name;
     }
-    public static String about(){
+    public  String about(){
 	return "The Warrior has uncomparable strength and attack but his life weak as the magician's";}
 
     //prepare a Warrior for a special attack

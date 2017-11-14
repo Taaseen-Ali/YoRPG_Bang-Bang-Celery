@@ -23,7 +23,7 @@ public class Sorcerer extends Protagonist{
 
 	
     }
-    public static String  about(){
+    public  String  about(){
 	return "The Sorcerer has a high defense while sacrificing hit-points to achieve such magic";}
     /*=============================================
       overloaded constructor

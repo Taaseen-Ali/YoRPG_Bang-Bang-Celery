@@ -4,7 +4,7 @@
 // 2017-11-13
 
 
-public class Protagonist extends Character
+public abstract class Protagonist extends Character
 {
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
   protected String _name = "J. Doe";
@@ -45,14 +45,8 @@ public class Protagonist extends Character
 
 
   //prepare a Protagonist for a special attack
-  public void specialize()
-  {
-    _attack = .75;
-    _defense = 20;
-  }
-
-
-  //revert to normal mode
-    public void abstract normalize();
+    public abstract  void normalize();
+    public abstract  void specialize();
+    public abstract  String about();
 
 }//end class Protagonist

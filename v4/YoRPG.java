@@ -75,7 +75,7 @@ public class YoRPG
     s += "\t1: The one who lets arrows fly";
     s+="\t2: the Olde wizard";
     s+="\t3: Argh!!!!!!!";
-    s+="\t4: None that is known to you";
+    //s+="\t4: None that is known to you";
     System.out.println(s);
         try {
 	    proType = Integer.parseInt( in.readLine() );
@@ -91,16 +91,15 @@ public class YoRPG
 
     //instantiate the player's character
     if (proType ==1){
-	pat = new Archer( name );
-	System.out.println(Archer.about());}
+	pat = new Archer( name );}
+	
     else if (proType == 2){
-	pat = new Sorcerer(name);
-	System.out.println(Sorcerer.about());}
+	pat = new Sorcerer(name);}
+    //System.out.println(Sorcerer.about());}
     else if (proType == 3){
-	pat = new Warrior(name);
-    System.out.println(Warrior.about());}
-    else {
-	pat = new Protagonist(name);}
+	pat = new Warrior(name);}
+	//System.out.println(Warrior.about());}
+    System.out.println(pat.about());
 
   }//end newGame()
 
@@ -120,7 +119,7 @@ public class YoRPG
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
-	    monType = (int)(Math.random() *4);
+	    monType = (int)(Math.random() *3);
 	    
 	    if (monType==0){
 		smaug = new Bandit();
@@ -134,8 +133,6 @@ public class YoRPG
 		smaug = new Demon();
 		System.out.println(Demon.about());
         }
-	    else {
-		smaug = new Monster();}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

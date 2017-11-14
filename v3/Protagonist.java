@@ -1,7 +1,7 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW28 -- Ye Olde Role Playing Game
-// 2017-11-08
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 
 
 public class Protagonist extends Character
@@ -22,6 +22,7 @@ public class Protagonist extends Character
     _strength = 100;
     _defense = 40;
     _attack = .4;
+    _info ="Who am I?";
   }
 
 
@@ -41,26 +42,7 @@ public class Protagonist extends Character
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-  /*=============================================
-    int attack(Monster) -- simulates attack on instance of class Monster
-    pre:  Input not null
-    post: Calculates damage to be inflicted, flooring at 0. 
-    Calls opponent's lowerHP() method to inflict damage. 
-    Returns damage dealt.
-    =============================================*/
-  public int attack( Monster opponent )
-  {
 
-    int damage = (int)( (_strength * _attack) - opponent.getDefense() );
-    //System.out.println( "\t\t**DIAG** damage: " + damage );
-
-    if ( damage < 0 )
-	    damage = 0;
-
-    opponent.lowerHP( damage );
-
-    return damage;
-  }//end attack
 
 
   //prepare a Protagonist for a special attack

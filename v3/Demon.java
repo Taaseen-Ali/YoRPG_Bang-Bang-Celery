@@ -14,10 +14,11 @@ public class Demon extends Monster{
     
     public Demon() {
 	
-	_hitPts = 90;
-	_strength =  10 + (int)( Math.random() * 45 ); // [10,55);
-	_defense = 20;
+	_hitPts = 60;
+	_strength =  10 + (int)( Math.random() * 25 ); // [10,35);
+	_defense = 70;
 	_attack = 1;
+	_info="Demons are weak but enduring creatures, with strong intelligence";
     }
     
     /*=============================================

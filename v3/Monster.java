@@ -21,6 +21,7 @@ public class Monster extends Character
     _strength = 20 + (int)( Math.random() * 45 ); // [20,65)
     _defense = 20;
     _attack = 1;
+    _info= "random monster";
   }
 
 
@@ -31,18 +32,7 @@ public class Monster extends Character
     Calls opponent's lowerHP() method to inflict damage. 
     Returns damage dealt.
     =============================================*/
-  public int attack( Protagonist opponent )
-  {
-    int damage = (int)( (_strength * _attack) - opponent.getDefense() );
-    //System.out.println( "\t\t**DIAG** damage: " + damage );
 
-    if ( damage < 0 )
-	    damage = 0;
-
-    opponent.lowerHP( damage );
-
-    return damage;
-  }//end attack
 
 
 }//end class Monster

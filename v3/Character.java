@@ -12,6 +12,9 @@ public class Character
   protected int _strength;
   protected int _defense;
   protected double _attack;
+    protected String _info;
+    public String about(){
+	return _info;}
 
 
   // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~

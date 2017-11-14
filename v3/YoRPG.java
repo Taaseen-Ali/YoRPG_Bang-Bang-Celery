@@ -96,8 +96,9 @@ public class YoRPG
 	pat = new Sorcerer(name);}
     else if (proType == 3){
 	pat = new Warrior(name);}
-    else if (proType == 4){
+    else {
 	pat = new Protagonist(name);}
+    System.out.println(name +", the " + pat.about());
 
   }//end newGame()
 
@@ -118,17 +119,19 @@ public class YoRPG
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 	    monType = (int)(Math.random() *4);
-	    if (monType ==0){
-		smaug = new Monster();}
-	    else if (monType==1){
+	    
+	    if (monType==0){
 		smaug = new Bandit();
-		System.out.println( "\n Black Coats he ...!" );}
-	    else if (monType==2){
+        }
+	    else if (monType==1){
 		smaug = new Beast();
-		System.out.println( "\nBiggest Beast in the hwoel..." );}
-	    else if (monType ==3){
+        }
+	    else if (monType ==2){
 		smaug = new Demon();
-		System.out.println( "\nDaemon!" );}
+        }
+	    else {
+		smaug = new Monster();}
+	    System.out.println(smaug.about());
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

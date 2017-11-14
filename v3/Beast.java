@@ -16,9 +16,10 @@ public class Beast extends Monster{
     public Beast() {
 	
 	_hitPts = 120;
-	_strength =  60 + (int)( Math.random() * 25 ); // [60,85);
+	_strength =  70 + (int)( Math.random() * 25 ); // [70,95);
 	_defense = 40;
-	_attack = 1;
+	_attack = .5;
+	_info =" Beasts are strong and fat but lack in spirit of attack";
     }
     
     /*=============================================

@@ -1,7 +1,7 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW30 -- Ye Olde Role Playing Game, Expanded
-// 2017-11-09
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 
 public class Warrior extends Protagonist{
 
@@ -20,6 +20,7 @@ public class Warrior extends Protagonist{
 	_strength = 100;
 	_defense = 50;
 	_attack = .8;
+	_info = "The Warrior has uncomparable strength and attack but his life weak as the magician's";
     }
     
     /*=============================================

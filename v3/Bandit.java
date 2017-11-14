@@ -19,6 +19,7 @@ public class Bandit extends Monster{
 	_strength =  10 + (int)( Math.random() * 45 ); // [10,55);
 	_defense = 20;
 	_attack = 1;
+	_info = "Bandits have weak hit-points, high attack rating";
     }
     
     /*=============================================

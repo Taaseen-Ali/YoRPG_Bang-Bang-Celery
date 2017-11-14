@@ -1,7 +1,7 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW30 -- Ye Olde Role Playing Game, Expanded
-// 2017-11-09
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 
 public class Archer extends Protagonist{
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
@@ -19,6 +19,7 @@ public class Archer extends Protagonist{
 	_strength = 80;
 	_defense = 30;
 	_attack = .7;
+	_info = "The Archeris weak in defense but her hitpoints are higher";
     }
     
     /*=============================================

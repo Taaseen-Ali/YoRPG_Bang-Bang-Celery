@@ -1,7 +1,7 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW30 -- Ye Olde Role Playing Game, Expanded
-// 2017-11-09
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 
 public class Sorcerer extends Protagonist{
 
@@ -18,8 +18,10 @@ public class Sorcerer extends Protagonist{
 	
 	_hitPts = 60;
 	_strength = 90;
-	_defense = 70;
+	_defense = 60;
 	_attack = .6;
+	_info = "The Sorcerer has a high defense while sacrificing hit-points to achieve such magic";
+	
     }
     
     /*=============================================
@@ -36,15 +38,15 @@ public class Sorcerer extends Protagonist{
     //prepare a Sorcerer for a special attack
     public void specialize()
     {
-	_attack = .8;
-	_defense = 50;
+	_attack = .6;
+	_defense = 40;
     }
 
     //revert to normal mode
     public void normalize()
     {
 	_attack = .6;
-	_defense = 70;
+	_defense = 60;
     }
 }
    

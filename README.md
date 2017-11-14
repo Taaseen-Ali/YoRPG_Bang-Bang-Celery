@@ -2,7 +2,6 @@
 APCS1 YoRPG
 -------------------------------------------------------
 ## Character
-
 -------------------------------------------------------
 ### Protagonists   
 * HP:80
@@ -31,9 +30,7 @@ APCS1 YoRPG
 * Defense: 50 (sp 30)
 * Attack Rating: .8(sp .9)
 * Info: The Warrior has uncomparable strength and attack but his life weak as the magician's 
-
-----------------------
-
+-------------------------------------------------------------
 ### Monsters
 * HP:150
 * Strength:20<=x<65

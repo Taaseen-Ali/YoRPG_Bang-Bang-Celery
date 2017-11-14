@@ -18,9 +18,10 @@ public class Demon extends Monster{
 	_strength =  10 + (int)( Math.random() * 25 ); // [10,35);
 	_defense = 70;
 	_attack = 1;
-	_info="Demons are weak but enduring creatures, with strong intelligence";
+	
     }
-    
+    public static String about(){
+	return "Demons are weak but enduring creatures, with strong intelligence"; }
     /*=============================================
       overloaded constructor
       pre:  instance vars are declared

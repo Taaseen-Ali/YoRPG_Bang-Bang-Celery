@@ -5,6 +5,7 @@
 
 public class Archer extends Protagonist{
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     /*=============================================
@@ -19,7 +20,7 @@ public class Archer extends Protagonist{
 	_strength = 80;
 	_defense = 30;
 	_attack = .7;
-	_info = "The Archeris weak in defense but her hitpoints are higher";
+
     }
     
     /*=============================================
@@ -32,7 +33,8 @@ public class Archer extends Protagonist{
 	this();
 	_name = name;
     }
-
+    public static String about(){
+	return "The Archeris weak in defense but her hitpoints are higher";}
     //prepare an Archer for a special attack
     public void specialize()
     {

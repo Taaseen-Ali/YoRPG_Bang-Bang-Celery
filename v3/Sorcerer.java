@@ -20,10 +20,11 @@ public class Sorcerer extends Protagonist{
 	_strength = 90;
 	_defense = 60;
 	_attack = .6;
-	_info = "The Sorcerer has a high defense while sacrificing hit-points to achieve such magic";
+
 	
     }
-    
+    public static String  about(){
+	return "The Sorcerer has a high defense while sacrificing hit-points to achieve such magic";}
     /*=============================================
       overloaded constructor
       pre:  instance vars are declared

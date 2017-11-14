@@ -19,7 +19,7 @@ public class Bandit extends Monster{
 	_strength =  10 + (int)( Math.random() * 45 ); // [10,55);
 	_defense = 20;
 	_attack = 1;
-	_info = "Bandits have weak hit-points, high attack rating";
+
     }
     
     /*=============================================
@@ -27,7 +27,8 @@ public class Bandit extends Monster{
       pre:  instance vars are declared
       post: initializes instance vars. _name is set to input String.
       =============================================*/
-    
+        public static String about(){
+	return "Bandits have weak hit-points, high attack rating";}
 
     
 }

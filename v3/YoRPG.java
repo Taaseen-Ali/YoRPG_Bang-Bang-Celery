@@ -91,14 +91,16 @@ public class YoRPG
 
     //instantiate the player's character
     if (proType ==1){
-	pat = new Archer( name );}
+	pat = new Archer( name );
+	System.out.println(Archer.about());}
     else if (proType == 2){
-	pat = new Sorcerer(name);}
+	pat = new Sorcerer(name);
+	System.out.println(Sorcerer.about());}
     else if (proType == 3){
-	pat = new Warrior(name);}
+	pat = new Warrior(name);
+    System.out.println(Warrior.about());}
     else {
 	pat = new Protagonist(name);}
-    System.out.println(name +", the " + pat.about());
 
   }//end newGame()
 
@@ -122,16 +124,18 @@ public class YoRPG
 	    
 	    if (monType==0){
 		smaug = new Bandit();
+		System.out.println(Bandit.about());
         }
 	    else if (monType==1){
 		smaug = new Beast();
+		System.out.println(Beast.about());
         }
 	    else if (monType ==2){
 		smaug = new Demon();
+		System.out.println(Demon.about());
         }
 	    else {
 		smaug = new Monster();}
-	    System.out.println(smaug.about());
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

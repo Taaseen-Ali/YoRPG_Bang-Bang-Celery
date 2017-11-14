@@ -20,7 +20,7 @@ public class Warrior extends Protagonist{
 	_strength = 100;
 	_defense = 50;
 	_attack = .8;
-	_info = "The Warrior has uncomparable strength and attack but his life weak as the magician's";
+
     }
     
     /*=============================================
@@ -33,6 +33,8 @@ public class Warrior extends Protagonist{
 	this();
 	_name = name;
     }
+    public static String about(){
+	return "The Warrior has uncomparable strength and attack but his life weak as the magician's";}
 
     //prepare a Warrior for a special attack
     public void specialize()

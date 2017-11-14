@@ -22,7 +22,6 @@ public class Protagonist extends Character
     _strength = 100;
     _defense = 40;
     _attack = .4;
-    _info ="Who am I?";
   }
 
 

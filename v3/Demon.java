@@ -14,9 +14,9 @@ public class Demon extends Monster{
     
     public Demon() {
 	
-	_hitPts = 60;
+	_hitPts = 80;
 	_strength =  10 + (int)( Math.random() * 25 ); // [10,35);
-	_defense = 70;
+	_defense = 90;
 	_attack = 1;
 	
     }

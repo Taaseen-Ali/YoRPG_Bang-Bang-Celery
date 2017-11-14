@@ -54,8 +54,8 @@ APCS1 YoRPG
 * Info: Beasts are strong and fat but lack in spirit of attack 
 
 #### Demon
-* HP:70
+* HP:80
 * Strength:10<=x<35
-* Defense: 80
+* Defense: 90
 * Attack Rating: 1
 * Info: Demons are weak but enduring creatures, with strong intelligence

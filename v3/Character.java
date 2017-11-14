@@ -1,17 +1,17 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW30 -- yorpg v2
-// 2017-11-09
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 
 
 public class Character
 {
 
   //this feels like a bad idea... but the compiler made me do it!
-  public int _hitPts;
-  public int _strength;
-  public int _defense;
-  public double _attack;
+  protected int _hitPts;
+  protected int _strength;
+  protected int _defense;
+  protected double _attack;
 
 
   // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~

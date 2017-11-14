@@ -1,8 +1,7 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW30 -- Ye Olde Role Playing Game, Expanded
-// 2017-11-09
-
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 public class Demon extends Monster{
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,9 +26,6 @@ public class Demon extends Monster{
       post: initializes instance vars. _name is set to input String.
       =============================================*/
     
-    public Demon( String name ) {
-	this();
-	_name = name;
-    }
+
     
 }

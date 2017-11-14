@@ -1,7 +1,7 @@
 // Bang Bang Celery (Taaseen Ali, Qian Zhou, Kayli Matsuyoshi)
 // APCS1 pd1
-// HW28 -- Ye Olde Role Playing Game
-// 2017-11-08
+// HW31 --  Ye Olde Role Playing Game, Expanded .
+// 2017-11-13
 
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
@@ -26,6 +26,8 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int proType;
+  private int monType;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -69,7 +71,16 @@ public class YoRPG
 	    difficulty = Integer.parseInt( in.readLine() );
     }
     catch ( IOException e ) { }
-
+    s = "Who art thou?";
+    s += "\t1: The one who lets arrows fly";
+    s+="\t2: the Olde wizard";
+    s+="\t3: Argh!!!!!!!";
+    s+="\t4: None that is known to you";
+    System.out.println(s);
+        try {
+	    proType = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
 
@@ -79,7 +90,14 @@ public class YoRPG
     catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    if (proType ==1){
+	pat = new Archer( name );}
+    else if (proType == 2){
+	pat = new Sorcerer(name);}
+    else if (proType == 3){
+	pat = new Warrior(name);}
+    else if (proType == 4){
+	pat = new Protagonist(name);}
 
   }//end newGame()
 
@@ -99,8 +117,18 @@ public class YoRPG
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
-
-	    smaug = new Monster();
+	    monType = (int)(Math.random() *4);
+	    if (monType ==0){
+		smaug = new Monster();}
+	    else if (monType==1){
+		smaug = new Bandit();
+		System.out.println( "\n Black Coats he ...!" );}
+	    else if (monType==2){
+		smaug = new Beast();
+		System.out.println( "\nBiggest Beast in the hwoel..." );}
+	    else if (monType ==3){
+		smaug = new Demon();
+		System.out.println( "\nDaemon!" );}
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

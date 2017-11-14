@@ -2,7 +2,7 @@
 APCS1 YoRPG
 -------------------------------------------------------
 ## Character
-HP, strength, defense, attack rating    ;information 
+
 -------------------------------------------------------
 ### Protagonists   
 * HP:80
@@ -32,6 +32,7 @@ HP, strength, defense, attack rating    ;information
 * Attack Rating: .8(sp .9)
 * Info: The Warrior has uncomparable strength and attack but his life weak as the magician's 
 
+----------------------
 
 ### Monsters
 * HP:150

@@ -1,11 +1,11 @@
-# YoRPG_Bang-Bang-Celery
+# YoRPG_Bang-Bang-Celery (Qian, Kayli, Taaseen)
 APCS1 YoRPG
 -------------------------------------------------------
 ## Plan: Shared Vision
 null 
 ------------------------------------------------------- 
 ## Feature Additions
-null
+Ability to use magic to highten abilities and potions for a 50% chance to heal 15 hp
 ------------------------------------------------------
 ## Code Restructurings
 null
@@ -14,7 +14,7 @@ null
 1. Choose your difficulty (input n, n is an integer from one to three)
 2. Select your type(1 == Archer; 2 == Sorcerer; 3 == Warrior)
 3. Encounter Monster and fight
-  * Choose if you feel to be lucky (1 == Normal Attack; 2 == Special Attack)
+  * Choose if you feel to be lucky (1 == Normal Attack; 2 == Special Attack 3 = Magic 4 = Heal)
 4. Repeat till fate decides 'tis over
   
 

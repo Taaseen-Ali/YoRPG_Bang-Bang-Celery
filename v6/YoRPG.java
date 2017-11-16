@@ -158,7 +158,7 @@ public class YoRPG
 	else if (i==4){
 	    boolean success = pat.usePotion();
 	    if(success){
-		System.out.println("Healed 10 hp!");
+		System.out.println("Healed 15 hp!");
 	    }
 	    else{
 		System.out.println("you are fail");
